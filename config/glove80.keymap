@@ -306,18 +306,20 @@ endif {
          key-positions = <49 37>;};};
     
 behaviors {};
+
+behaviors {};
 keymap {
         compatible = "zmk,keymap";
 
 
         Base {
          bindings = <
-&none         &none  &none  &none  &none                                                                                   &none  &none        &none       &none           &none
-&none         &none  &none  &none  &none  &none                                                                     &none  &none  &none        &none       &none           &none
-&none         &kp Q  &kp W  &kp F  &kp P  &kp B                                                                     &kp J  &kp L  &kp U        &kp Y       &question_excl  &none
-&kp CAPSLOCK  &kp A  &kp R  &kp S  &kp T  &kp G                                                                     &kp M  &kp N  &kp E        &kp I       &kp O           &none
-&none         &kp Z  &kp X  &kp C  &kp D  &kp V  &kp LSHFT      &none      &none    &none  &none    &kp RSHFT       &kp K  &kp H  &comma_semi  &dot_colon  &kp SQT         &none
-&none         &none  &none  &none  &none         &ht_lt 1 BSPC  &td_shift  &none    &none  &kp RET  &ht_lt 2 SPACE         &none  &none        &none       &none           &none
+&none         &none  &none  &none  &none                                                                                     &none  &none        &none       &none           &none
+&none         &none  &none  &none  &none  &none                                                                       &none  &none  &none        &none       &none           &none
+&none         &kp Q  &kp W  &kp F  &kp P  &kp B                                                                       &kp J  &kp L  &kp U        &kp Y       &question_excl  &none
+&kp CAPSLOCK  &kp A  &kp R  &kp S  &kp T  &kp G                                                                       &kp M  &kp N  &kp E        &kp I       &kp O           &none
+&none         &kp Z  &kp X  &kp C  &kp D  &kp V  &kp LSHFT      &none      &none    &none  &none      &kp RSHFT       &kp K  &kp H  &comma_semi  &dot_colon  &kp SQT         &none
+&none         &none  &none  &none  &none         &ht_lt 1 BSPC  &kp ENTER  &none    &none  &td_shift  &ht_lt 2 SPACE         &none  &none        &none       &none           &none
 >;};
 Editing {
          bindings = <
@@ -332,9 +334,9 @@ Numbers {
          bindings = <
 &trans  &trans  &trans  &trans  &trans                                                                    &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N7  &kp N8  &kp N9  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&kp N0  &kp N4  &kp N5  &kp N6  &trans  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &kp N7  &kp N8  &kp N9  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&none   &kp N0  &kp N4  &kp N5  &kp N6  &trans                                                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &none   &kp N1  &kp N2  &kp N3  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
 >;};
 Magic {
