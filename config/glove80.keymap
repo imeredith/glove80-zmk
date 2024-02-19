@@ -303,8 +303,14 @@ endif {
         compatible = "zmk,combos";
       bslash {
          bindings = <&kp BSLH>;
-         key-positions = <49 37>;};};
+         key-positions = <49 37>;};m_slash {
+         bindings = <&kp SLASH>;
+         key-positions = <60 42>;};m_plus {
+         bindings = <&kp PLUS>;
+         key-positions = <41 29>;};};
     
+behaviors {};
+
 behaviors {};
 
 behaviors {};
