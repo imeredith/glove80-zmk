@@ -185,7 +185,25 @@ endif {
     
          label = "TD_SHIFT";
          #binding-cells = <0>;
-         bindings = <&kp LSHFT>, <&caps_word>;};
+         bindings = <&kp LSHFT>, <&caps_word>;};comma_semi: comma_semi {
+      compatible = "zmk,behavior-mod-morph";
+    
+         label = "COMMA_SEMI";
+         bindings = <&kp COMMA>, <&kp SEMI>;
+         #binding-cells = <0>;
+         mods = <(MOD_LSFT|MOD_RSFT)>;};dot_colon: dot_colon {
+      compatible = "zmk,behavior-mod-morph";
+    
+         label = "DOT_COLON";
+         bindings = <&kp DOT>, <&kp COLON>;
+         #binding-cells = <0>;
+         mods = <(MOD_LSFT|MOD_RSFT)>;};question_excl: question_excl {
+      compatible = "zmk,behavior-mod-morph";
+    
+         label = "QUESTION_EXCL";
+         bindings = <&kp QUESTION>, <&kp EXCLAMATION>;
+         #binding-cells = <0>;
+         mods = <(MOD_LSFT|MOD_RSFT)>;};
     };
 };
 
@@ -286,18 +304,20 @@ endif {
       bslash {
          bindings = <&kp BSLH>;
          key-positions = <49 37>;};};
-    keymap {
+    
+behaviors {};
+keymap {
         compatible = "zmk,keymap";
 
 
         Base {
          bindings = <
-&none         &none  &none  &none  &none                                                                                 &none  &none      &none    &none          &none
-&none         &none  &none  &none  &none  &none                                                                   &none  &none  &none      &none    &none          &none
-&none         &kp Q  &kp W  &kp F  &kp P  &kp B                                                                   &kp J  &kp L  &kp U      &kp Y    &kp LS(QMARK)  &none
-&kp CAPSLOCK  &kp A  &kp R  &kp S  &kp T  &kp G                                                                   &kp M  &kp N  &kp E      &kp I    &kp O          &none
-&none         &kp Z  &kp X  &kp C  &kp D  &kp V  &kp LSHFT      &none    &none    &none  &none    &kp RSHFT       &kp K  &kp H  &kp COMMA  &kp DOT  &kp SQT        &none
-&none         &none  &none  &none  &none         &ht_lt 1 BSPC  &kp TAB  &none    &none  &kp RET  &ht_lt 2 SPACE         &none  &none      &none    &none          &none
+&none         &none  &none  &none  &none                                                                                   &none  &none        &none       &none           &none
+&none         &none  &none  &none  &none  &none                                                                     &none  &none  &none        &none       &none           &none
+&none         &kp Q  &kp W  &kp F  &kp P  &kp B                                                                     &kp J  &kp L  &kp U        &kp Y       &question_excl  &none
+&kp CAPSLOCK  &kp A  &kp R  &kp S  &kp T  &kp G                                                                     &kp M  &kp N  &kp E        &kp I       &kp O           &none
+&none         &kp Z  &kp X  &kp C  &kp D  &kp V  &kp LSHFT      &none      &none    &none  &none    &kp RSHFT       &kp K  &kp H  &comma_semi  &dot_colon  &kp SQT         &none
+&none         &none  &none  &none  &none         &ht_lt 1 BSPC  &td_shift  &none    &none  &kp RET  &ht_lt 2 SPACE         &none  &none        &none       &none           &none
 >;};
 Editing {
          bindings = <
