@@ -233,7 +233,8 @@
          key-positions = <60 42>;};ampersand {
          bindings = <&kp AMPERSAND>;
          key-positions = <31 43>;};pipe {
-         bindings = <&kp PIPE>;left_bracket {
+         bindings = <&kp PIPE>;
+        key-positions = <60 42>;};left_bracket {
          bindings = <&kp LPAR>;
          key-positions = <42 41>;};right_bracket {
          bindings = <&kp RIGHT_PARENTHESIS>;
