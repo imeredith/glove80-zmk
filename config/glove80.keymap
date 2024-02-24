@@ -284,14 +284,39 @@
 / {
     
       combos {
-        compatible = "zmk,combos";
-      bslash {
-         bindings = <&kp BSLH>;
-         key-positions = <49 37>;};m_slash {
-         bindings = <&kp SLASH>;
-         key-positions = <60 42>;};m_plus {
+        compatible = "zmk,combos";at {
+         bindings = <&kp AT_SIGN>;
+         key-positions = <24 36>;};backtick {
+         bindings = <&kp GRAVE>;
+         key-positions = <36 48>;};hash {
+         bindings = <&kp HASH>;
+         key-positions = <25 37>;};backslash {
+         bindings = <&kp BACKSLASH>;
+         key-positions = <37 49>;};dollar {
+         bindings = <&kp DOLLAR>;
+         key-positions = <26 38>;};equals {
+         bindings = <&kp EQUAL>;
+         key-positions = <50 38>;};percent {
+         bindings = <&kp PERCENT>;
+         key-positions = <15 27>;};tilde {
+         bindings = <&kp TILDE>;
+         key-positions = <51 39>;};caret {
+         bindings = <&kp CARET>;
+         key-positions = <28 40>;};underscore {
+         bindings = <&kp UNDERSCORE>;
+         key-positions = <58 40>;};plus {
          bindings = <&kp PLUS>;
-         key-positions = <41 29>;};};
+         key-positions = <29 41>;};minus {
+         bindings = <&kp MINUS>;
+         key-positions = <59 41>;};star {
+         bindings = <&kp ASTERISK>;
+         key-positions = <30 42>;};slash {
+         bindings = <&kp SLASH>;
+         key-positions = <60 42>;};ampersand {
+         bindings = <&kp AMPERSAND>;
+         key-positions = <31 43>;};pipe {
+         bindings = <&kp PIPE>;
+         key-positions = <61 43>;};};
     
 behaviors {};
 
