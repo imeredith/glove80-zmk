@@ -17,11 +17,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-endif {
+/ {
     /* Custom Device-tree */
     /* Glove80 system behavior & macros */
-
-    /
 
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
