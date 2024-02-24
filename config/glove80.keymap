@@ -315,35 +315,23 @@
          key-positions = <60 42>;};ampersand {
          bindings = <&kp AMPERSAND>;
          key-positions = <31 43>;};pipe {
-         bindings = <&kp PIPE>;
-         key-positions = <61 43>;};esc {
-         bindings = <&kp ESCAPE>;
-         key-positions = <36 37>;};enter {
-         bindings = <&kp ENTER>;
-         key-positions = <37 38>;};tab {
-         bindings = <&kp TAB>;
-         key-positions = <49 50>;};backspace {
-         bindings = <&kp BACKSPACE>;
-         key-positions = <25 26>;};left_bracket {
+         bindings = <&kp PIPE>;left_bracket {
          bindings = <&kp LPAR>;
          key-positions = <42 41>;};right_bracket {
          bindings = <&kp RIGHT_PARENTHESIS>;
          key-positions = <43 42>;};lessthan {
          bindings = <&kp LESS_THAN>;
-         key-positions = <42 41>;
-         layers = <1>;};greaterthan {
+         key-positions = <36 37>;};greaterthan {
          bindings = <&kp GREATER_THAN>;
-         key-positions = <43 42>;
-         layers = <1>;};lef_brace {
+         key-positions = <37 38>;};lef_brace {
          bindings = <&kp LEFT_BRACE>;
          key-positions = <59 60>;};right_brace {
          bindings = <&kp RIGHT_BRACE>;
          key-positions = <60 61>;};left_sq {
          bindings = <&kp LEFT_BRACKET>;
-         key-positions = <60 59>;
-         layers = <1>;};right_sq {
+         key-positions = <49 48>;};right_sq {
          bindings = <&kp RIGHT_BRACKET>;
-         key-positions = <60 61>;};};
+         key-positions = <50 49>;};};
     
 behaviors {};
 
@@ -358,21 +346,21 @@ keymap {
 
         Base {
          bindings = <
-&none         &none  &none  &none  &none                                                                                     &none  &none        &none       &none           &none
-&none         &none  &none  &none  &none  &none                                                                       &none  &none  &none        &none       &none           &none
-&none         &kp Q  &kp W  &kp F  &kp P  &kp B                                                                       &kp J  &kp L  &kp U        &kp Y       &question_excl  &none
-&kp CAPSLOCK  &kp A  &kp R  &kp S  &kp T  &kp G                                                                       &kp M  &kp N  &kp E        &kp I       &kp O           &none
-&none         &kp Z  &kp X  &kp C  &kp D  &kp V  &kp LSHFT      &none      &none    &none  &none      &kp RSHFT       &kp K  &kp H  &comma_semi  &dot_colon  &kp SQT         &none
-&none         &none  &none  &none  &none         &ht_lt 1 BSPC  &kp ENTER  &none    &none  &td_shift  &ht_lt 2 SPACE         &none  &none        &none       &none           &none
+&none         &none  &none  &none  &none                                                                                       &none  &none        &none       &none           &none
+&none         &none  &none  &none  &none    &none                                                                       &none  &none  &none        &none       &none           &none
+&none         &kp Q  &kp W  &kp F  &kp P    &kp B                                                                       &kp J  &kp L  &kp U        &kp Y       &question_excl  &none
+&kp CAPSLOCK  &kp A  &kp R  &kp S  &kp T    &kp G                                                                       &kp M  &kp N  &kp E        &kp I       &kp O           &none
+&none         &kp Z  &kp X  &kp C  &kp D    &kp V  &kp LSHFT      &none      &none    &none  &none      &kp RSHFT       &kp K  &kp H  &comma_semi  &dot_colon  &kp SQT         &none
+&none         &none  &none  &none  &kp TAB         &ht_lt 1 BSPC  &kp ENTER  &none    &none  &td_shift  &ht_lt 2 SPACE         &none  &none        &none       &none           &none
 >;};
 Editing {
          bindings = <
-&trans  &trans  &trans  &trans  &trans                                                                    &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                                    &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans    &trans    &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans                                                                          &trans    &trans    &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                       &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                       &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                       &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp SPACE  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans                &trans  &trans  &trans    &trans  &trans  &trans          &trans    &trans    &trans  &trans     &trans
 >;};
 Numbers {
          bindings = <
