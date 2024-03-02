@@ -280,21 +280,21 @@ keymap {
 
         Base {
          bindings = <
-&none                 &none         &none        &none        &none                                                                                                                                  &none         &none        &none        &none           &none
-&none                 &none         &none        &none        &none         &kp ESCAPE                                                                                     &none                     &none         &none        &none        &none           &none
-&kp LA(LC(LS(LGUI)))  &kp Q         &kp W        &kp F        &kp P         &kp B                                                                                          &kp J                     &kp L         &kp U        &kp Y        &question_excl  &none
-&kp CAPSLOCK          &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T  &hml LS(LA(LG(LCTRL))) G                                                                       &hmr LS(LA(LG(LCTRL))) M  &hmr RSHFT N  &hmr RGUI E  &hmr RALT I  &hmr RCTRL O    &none
-&none                 &kp Z         &kp X        &kp C        &kp D         &kp V                     &kp LSHFT      &none      &none    &none  &none      &kp RSHFT       &kp K                     &kp H         &comma_semi  &dot_colon   &kp SQT         &none
-&magic 4 0            &none         &none        &none        &kp TAB                                 &ht_lt 1 BSPC  &kp ENTER  &none    &mo 3  &td_shift  &ht_lt 2 SPACE                            &none         &none        &none        &none           &none
+&none                 &none         &none        &none        &none                                                                                                                                    &none         &none        &none        &none           &none
+&none                 &none         &none        &none        &none         &kp ESCAPE                                                                                       &none                     &none         &none        &none        &none           &none
+&kp LA(LC(LS(LGUI)))  &kp Q         &kp W        &kp F        &kp P         &kp B                                                                                            &kp J                     &kp L         &kp U        &kp Y        &question_excl  &none
+&kp CAPSLOCK          &hml LCTRL A  &hml LALT R  &hml LGUI S  &hml LSHFT T  &hml LS(LA(LG(LCTRL))) G                                                                         &hmr LS(LA(LG(LCTRL))) M  &hmr RSHFT N  &hmr RGUI E  &hmr RALT I  &hmr RCTRL O    &none
+&none                 &kp Z         &kp X        &kp C        &kp D         &kp V                     &kp LSHFT      &none      &none      &none  &none      &kp RSHFT       &kp K                     &kp H         &comma_semi  &dot_colon   &kp SQT         &none
+&magic 4 0            &none         &none        &none        &kp ESCAPE                              &ht_lt 1 BSPC  &kp ENTER  &kp TAB    &mo 3  &td_shift  &ht_lt 2 SPACE                            &none         &none        &none        &none           &none
 >;};
 Editing {
          bindings = <
-&trans  &trans     &trans     &trans     &trans                                                                          &trans    &trans    &trans  &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans                                                       &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans                                                       &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans                                                       &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp SPACE  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans    &trans    &trans  &trans     &trans
-&trans  &trans     &trans     &trans     &trans                &trans  &trans  &trans    &trans  &trans  &trans          &trans    &trans    &trans  &trans     &trans
+&trans  &trans     &trans     &trans     &trans                                                                           &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                        &trans  &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                        &trans  &kp LC(A)  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp LC(E)  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                        &trans  &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp SPACE  &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans     &trans     &trans                &kp DEL  &trans  &trans    &trans  &trans  &trans          &trans     &trans         &trans         &trans     &trans
 >;};
 Numbers {
          bindings = <
