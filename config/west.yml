@@ -2,10 +2,12 @@ manifest:
   remotes:
     - name: moergo-sc
       url-base: https://github.com/moergo-sc
+    - name: bryan
+      url-base: https://github.com/bryanforbes
   projects:
     - name: zmk
-      remote: moergo-sc
-      revision: main
+      remote: bryan
+      revision: /mouse-3.2-moergo
       import: app/west.yml
   self:
     path: config
