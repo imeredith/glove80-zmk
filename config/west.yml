@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: bryan
-      revision: /mouse-3.2-moergo
+      revision: mouse-3.2-moergo
       import: app/west.yml
   self:
     path: config
