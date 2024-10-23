@@ -301,12 +301,12 @@ keymap {
 >;};
 Editing {
          bindings = <
-&trans  &trans     &trans     &trans     &trans                                                                                   &trans     &trans         &trans         &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans                                                        &trans          &trans     &trans         &trans         &trans     &trans
-&trans  &trans     &trans     &trans     &trans     &trans                                                        &kp BSPC        &kp LC(A)  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp LC(E)  &trans
-&trans  &trans     &trans     &trans     &trans     &trans                                                        &kp DELETE      &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT  &trans
-&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp SPACE  &trans   &trans  &trans    &trans  &trans  &trans  &kp LA(DELETE)  &trans     &trans         &trans         &trans     &trans
-&trans  &trans     &trans     &trans     &trans                &kp DEL  &trans  &trans    &trans  &trans  &trans                  &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans     &trans     &trans                                                                                      &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                        &trans             &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                        &kp BSPC           &kp LC(A)  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp LC(E)  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                                                        &kp DELETE         &kp LEFT   &kp DOWN       &kp UP         &kp RIGHT  &trans
+&trans  &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp SPACE  &trans   &trans  &trans    &trans  &trans  &trans  &kp LA(BACKSPACE)  &trans     &trans         &trans         &trans     &trans
+&trans  &trans     &trans     &trans     &trans                &kp DEL  &trans  &trans    &trans  &trans  &trans                     &trans     &trans         &trans         &trans     &trans
 >;};
 Numbers {
          bindings = <
