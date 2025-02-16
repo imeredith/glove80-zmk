@@ -6,10 +6,14 @@ manifest:
       url-base: https://github.com/bryanforbes
     - name: imeredith
       url-base: https://github.com/imeredith
+    - name: caksoylar
+      url-base: https://github.com/caksoylar
   projects:
     - name: zmk
-      remote: imeredith
+      remote: moergo-sc
       revision: main
       import: app/west.yml
-  self:
+    - name: zmk-smart-toggle
+      remote: caksoylar
+      revision: main
     path: config
