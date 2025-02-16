@@ -16,4 +16,5 @@ manifest:
     - name: zmk-smart-toggle
       remote: caksoylar
       revision: main
+  self:
     path: config
