@@ -67,6 +67,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        windowswap: windowswap {
+            compatible = "zmk,behavior-smart-toggle";
+            label = "WINDOWSWAP";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp GRAVE>, <&kt LGUI>;
+
+            ignored-key-positions = <1>;
+        };
     };
 
     macros {
@@ -133,12 +142,12 @@
 
         nav {
             bindings = <
-&trans  &trans     &trans    &trans             &trans                                                                                                   &trans    &trans    &trans     &trans         &trans
-&trans  &trans     &trans    &trans             &trans                &trans                                                                   &trans    &trans    &trans    &trans     &trans         &trans
-&trans  &kp TAB    &swap     &sk LS(LA(LCTRL))  &sk LS(LA(LC(LGUI)))  &kp LG(LC(LS(LA(Z))))                                                    &trans    &trans    &kp UP    &trans     &kp DEL        &trans
-&trans  &sk LCTRL  &sk LALT  &sk LGUI           &sk LSHFT             &kp LA(LC(LS(LG(X))))                                                    &kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp BACKSPACE  &trans
-&trans  &kp ESC    &trans    &kp BACKSPACE      &kp ENTER             &trans                 &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans    &trans    &trans     &kp RET        &trans
-&trans  &trans     &trans    &trans             &trans                                       &trans  &trans  &trans    &trans  &trans  &trans            &trans    &trans    &trans     &trans         &trans
+&trans  &trans     &trans       &trans             &trans                                                                                                   &trans    &trans    &trans     &trans         &trans
+&trans  &trans     &trans       &trans             &trans                &trans                                                                   &trans    &trans    &trans    &trans     &trans         &trans
+&trans  &kp TAB    &swap        &sk LS(LA(LCTRL))  &sk LS(LA(LC(LGUI)))  &kp LG(LC(LS(LA(Z))))                                                    &trans    &trans    &kp UP    &trans     &kp DEL        &trans
+&trans  &sk LCTRL  &sk LALT     &sk LGUI           &sk LSHFT             &kp LA(LC(LS(LG(X))))                                                    &kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp BACKSPACE  &trans
+&trans  &kp ESC    &windowswap  &kp BACKSPACE      &kp ENTER             &trans                 &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans    &trans    &trans     &kp RET        &trans
+&trans  &trans     &trans       &trans             &trans                                       &trans  &trans  &trans    &trans  &trans  &trans            &trans    &trans    &trans     &trans         &trans
             >;
         };
 
