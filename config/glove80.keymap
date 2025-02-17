@@ -42,7 +42,7 @@
         };
 
         swap: swapper {
-            compatible = "zmk,behavior-tri-state";
+            compatible = "zmk,behavior-smart-toggle";
             label = "SWAPPER";
             #binding-cells = <0>;
             bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
