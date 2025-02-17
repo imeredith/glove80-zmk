@@ -115,8 +115,8 @@
 &none       &none  &none  &none  &none  &none                                                                                      &none  &none  &none        &none       &none             &none
 &none       &kp Q  &kp W  &kp F  &kp P  &kp B                                                                                      &kp J  &kp L  &kp U        &kp Y       &kp SQT           &none
 &none       &kp A  &kp R  &kp S  &kp T  &kp G                                                                                      &kp M  &kp N  &kp E        &kp I       &kp O             &none
-&none       &kp Z  &kp X  &kp C  &kp D  &kp V  &none           &none  &none                   &none              &none  &none      &kp K  &kp H  &comma_semi  &dot_colon  &kp SINGLE_QUOTE  &none
-&magic 4 0  &none  &none  &none  &none         &kp LEFT_SHIFT  &mo 2  &kp LS(LA(LC(LGUI)))    &kp LS(LA(LCTRL))  &mo 1  &kp SPACE         &none  &none        &none       &none             &none
+&none       &kp Z  &kp X  &kp C  &kp D  &kp V  &none  &none           &none                   &none              &none  &none      &kp K  &kp H  &comma_semi  &dot_colon  &kp SINGLE_QUOTE  &none
+&magic 4 0  &none  &none  &none  &none         &mo 2  &kp LEFT_SHIFT  &kp LS(LA(LC(LGUI)))    &kp LS(LA(LCTRL))  &mo 1  &kp SPACE         &none  &none        &none       &none             &none
             >;
         };
 
@@ -137,7 +137,7 @@
 &trans  &trans     &trans    &trans             &trans                &trans                                                                   &trans    &trans    &trans    &trans     &trans         &trans
 &trans  &kp TAB    &swap     &sk LS(LA(LCTRL))  &sk LS(LA(LC(LGUI)))  &kp LG(LC(LS(LA(Z))))                                                    &trans    &trans    &kp UP    &trans     &kp DEL        &trans
 &trans  &sk LCTRL  &sk LALT  &sk LGUI           &sk LSHFT             &kp LA(LC(LS(LG(X))))                                                    &kp CAPS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp BACKSPACE  &trans
-&trans  &trans     &trans    &kp BACKSPACE      &kp ENTER             &trans                 &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans    &trans    &trans     &kp RET        &trans
+&trans  &kp ESC    &trans    &kp BACKSPACE      &kp ENTER             &trans                 &trans  &trans  &trans    &trans  &trans  &trans  &trans    &trans    &trans    &trans     &kp RET        &trans
 &trans  &trans     &trans    &trans             &trans                                       &trans  &trans  &trans    &trans  &trans  &trans            &trans    &trans    &trans     &trans         &trans
             >;
         };
